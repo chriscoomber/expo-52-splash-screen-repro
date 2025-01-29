@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
+import { StatusBar } from 'expo-status-bar';
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
@@ -51,11 +52,14 @@ export default function App() {
   }
 
   return (
-    <View
-      style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
-      onLayout={onLayoutRootView}>
-      <Text>SplashScreen Demo! 👋</Text>
-      <Entypo name="rocket" size={30} />
-    </View>
+    <>
+      <StatusBar translucent style="light" />
+      <View
+        style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#002E63' }}
+        onLayout={onLayoutRootView}>
+        <Text style={{color: 'white'}}>SplashScreen Demo! 👋</Text>
+        <Entypo name="rocket" size={30} color='white' />
+      </View>
+    </>
   );
 }

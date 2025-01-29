@@ -14,6 +14,11 @@
         }
       ]
     ],
+    "androidStatusBar": {
+      "barStyle": "light-content",
+      "hidden": true,
+      "backgroundColor": "#002E63"
+    },
     "android": {
       "package": "com.whiteroseeducation.examplesplashscreen"
     }
