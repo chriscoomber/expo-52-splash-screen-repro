@@ -1,4 +1,21 @@
 {
-  "name": "example-splash-screen",
-  "slug": "example-splash-screen"
+  "expo": {
+    "name": "example-splash-screen",
+    "slug": "example-splash-screen",
+    "orientation": "landscape",
+    "icon": "./assets/AppIcon.png",
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#002E63",
+          "image": "./assets/AppIcon.png",
+          "imageWidth": 180
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.whiteroseeducation.examplesplashscreen"
+    }
+  }
 }
