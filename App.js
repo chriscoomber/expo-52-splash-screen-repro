@@ -3,14 +3,14 @@ import { Text, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
-import { StatusBar } from 'expo-status-bar';
+import { SystemBars } from 'react-native-edge-to-edge';
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
 
 // Set the animation options. This is optional.
 SplashScreen.setOptions({
-  duration: 1000,
+  duration: 2000,
   fade: true,
 });
 
@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <>
-      <StatusBar translucent style="light" />
+      <SystemBars style="light" />
       <View
         style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#002E63' }}
         onLayout={onLayoutRootView}>

@@ -4,6 +4,9 @@
     "slug": "example-splash-screen",
     "orientation": "landscape",
     "icon": "./assets/AppIcon.png",
+    "android": {
+      "package": "com.whiteroseeducation.examplesplashscreen"
+    },
     "plugins": [
       [
         "expo-splash-screen",
@@ -12,15 +15,16 @@
           "image": "./assets/AppIcon.png",
           "imageWidth": 180
         }
+      ],
+      [
+        "react-native-edge-to-edge",
+        {
+          "android": {
+            "parentTheme": "Light",
+            "enforceNavigationBarContrast": false
+          }
+        }
       ]
-    ],
-    "androidStatusBar": {
-      "barStyle": "light-content",
-      "hidden": true,
-      "backgroundColor": "#002E63"
-    },
-    "android": {
-      "package": "com.whiteroseeducation.examplesplashscreen"
-    }
+    ]
   }
 }
