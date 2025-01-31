@@ -1,0 +1,10 @@
+{
+  "build": {
+    "preview": {
+      "channel": "preview",
+      "distribution": "internal",
+      "developmentClient": false
+    }
+  }
+}
+  

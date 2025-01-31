@@ -61,9 +61,11 @@ function AnimatedSplashScreen({ children, image }) {
 
   const onImageLoaded = useCallback(async () => {
     try {
+      // Load stuff - simulate 1 second before splash image loads
+      await new Promise(r => setTimeout(r, 1000))
       await SplashScreen.hideAsync();
-      // Load stuff
-      await Promise.all([]);
+      // and simulate 1 second before fonts load
+      await new Promise(r => setTimeout(r, 1000))
     } catch (e) {
       // handle errors
     } finally {
